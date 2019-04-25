@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1alpha4
+kind: ""
+build:
+  artifacts:
+  - image: machgo/podrecycler
+deploy:
+  kubectl:
+    manifests:
+    - deploy.yaml
